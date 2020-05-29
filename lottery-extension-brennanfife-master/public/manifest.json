@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Lottery Scrapper",
+  "author": "Brennan Fife",
+  "version": "1.0.0",
+  "description": "Periodically scrape lottery results",
+  "icons": {
+    "16": "icons/16.ico",
+    "32": "icons/32.ico",
+    "48": "icons/48.ico",
+    "128": "icons/128.ico"
+  },
+  "page_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/16.ico",
+      "32": "icons/32.ico",
+      "48": "icons/48.ico",
+      "128": "icons/128.ico"
+    }
+  },
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'",
+  "background": {
+    "scripts": ["background.ts"],
+    "persistent": false
+  },
+  "permissions": ["declarativeContent", "tabs", "activeTab", "<all_urls>"]
+}
